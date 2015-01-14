@@ -52,11 +52,3 @@ Look in ```src/testsuite/core.clj```
 - [Daniel Gregoire](https://github.com/semperos) for the awesome [clj-webdriver](https://github.com/semperos/clj-webdriver)
 - [Robert Stuttaford](https://github.com/robert-stuttaford) for suggesting this :)
 
-
-
-
-
-
-
-
-
