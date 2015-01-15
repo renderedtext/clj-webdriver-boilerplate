@@ -13,6 +13,11 @@
 (defn browser-down
   "If this is the last request, shut the browser down."
   [& {:keys [force] :or {force false}}]
-  (when (zero? (swap! browser-count (if force (constantly 0) dec)))
+  (swap! browser-count dec)
+  (when (or force (zero? @browser-count))
     (quit)))
 
+(defn with-browser [t]
+  (browser-up)
+  (t)
+  (browser-down))
