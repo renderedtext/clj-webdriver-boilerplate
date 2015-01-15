@@ -1,6 +1,6 @@
 (ns leiningen.with-browser
   (:require [leiningen.core.main :as main]
-            [clj-webdriver-boilerplate.core :refer :all]))
+            [clj-webdriver-boilerplate.core :refer [browser-up browser-down]]))
 
 (defn ^:higher-order with-browser
   "Run a (test) task with a browser already open."
