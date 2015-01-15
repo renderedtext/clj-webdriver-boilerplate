@@ -1,9 +1,10 @@
-# Clojure acceptance testing boilerplate for the [clj-webdriver](https://github.com/semperos/clj-webdriver)
+# Boilerplate for the [clj-webdriver](https://github.com/semperos/clj-webdriver)
 
 [![Build
 Status](https://semaphoreapp.com/api/v1/projects/ac6a72a8-4176-4571-948b-b5fb860b5cd1/326380/badge.png)](https://semaphoreapp.com/renderedtext/clj-webdriver-boilerplate)
 
-Taken from Sean Corfield's [blog post](http://corfield.org/blog/post.cfm/automated-browser-based-testing-with-clojure) 
+Taken from Sean Corfield's [blog
+post](http://corfield.org/blog/post.cfm/automated-browser-based-testing-with-clojure)
 "Automated Browser-based Testing with Clojure".
 
 ## Requirements
@@ -32,18 +33,22 @@ Otherwise just use ```lein test```
 To use in the REPL:
 
 ```
-(use 'testsuite.core)
+(use 'clj-webdriver-boilerplate.core)
 (use 'clojure.test)
 (use 'clj-webdriver.taxi)
+
 (browser-up)
+
 (to "http://www.github.com")
+
+(browser-down)
 ```
 
-There are two example tests in ```test/testsuite/```
+There are two example tests in ```test/clj-webdriver-boilerplate/```
 
 ## Choose a different browser
 
-Look in ```src/testsuite/core.clj``` 
+Look in `src/clj-webdriver-boilerplate.clj` 
 
 ## More info
 
